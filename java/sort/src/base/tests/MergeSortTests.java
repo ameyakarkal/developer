@@ -11,7 +11,7 @@ import base.MergeSort;
 public class MergeSortTests {
 
 	@Test
-	public void test() {
+	public void shouldNotBeNull() {
 		ISort algorithm = new MergeSort(new int[]{ 1, 2 });
 		
 		Assert.assertNotNull(algorithm);
@@ -36,7 +36,14 @@ public class MergeSortTests {
 		int[] second = new int[] { 2, 3};
 		
 		MergeSortDummy sort = new MergeSortDummy(new int[]{});
-		System.out.println(Arrays.toString(sort.merge(first, second)));
+		System.out.println(Arrays.toString(sort.merge(second, first)));
+	}
+	
+	@Test
+	public void shouldSort(){
+		ISort algorithm = new MergeSort(new int[]{ 2, 1, 4, 5, 8 });
+		
+		System.out.println(Arrays.toString(algorithm.sort()));
 	}
 	
 	private class MergeSortDummy extends MergeSort{

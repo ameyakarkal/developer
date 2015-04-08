@@ -34,29 +34,29 @@ public class MergeSort implements ISort{
 	}
 	
 	protected int[] merge(int[] first, int[] second){
-		int firstSourceLength = first.length;
+		int firstWalker = 0, secondWalker = 0, combinedWalker = 0;
+		int firstLength = first.length;
+		int secondLength = second.length;
+		int[] output = new int[firstLength + secondLength];
 		
-		int secondSourceLength = second.length;
-		
-		int maxLength = Math.max(firstSourceLength, secondSourceLength);
-		
-		int[] output = new int[maxLength];
-		
-		for(int walker = 0; walker < maxLength; walker++)
-		{
-			if(firstSourceLength > walker && secondSourceLength > walker)
-			{
-				output[walker] = Math.min(first[walker], second[walker]);
-				continue;
-			}
+		while(firstWalker < firstLength && secondWalker < secondLength){
 			
-			if(firstSourceLength > walker){
-				output[walker] = first[walker];
-				continue;
+			if(first[firstWalker] < second[secondWalker]){
+				output[combinedWalker] = first[firstWalker];
+				firstWalker++;
 			}
-			
-			output[walker] = second[walker];
+			else{
+				output[combinedWalker] = second[secondWalker];
+				secondWalker++;
+			}
+			combinedWalker++;
 		}
+		
+		while(firstWalker < firstLength)
+			output[combinedWalker++] = first[firstWalker++];
+		
+		while(secondWalker < secondLength)
+			output[combinedWalker++] = second[secondWalker++];
 		
 		return output;
 	}
