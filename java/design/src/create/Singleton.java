@@ -1,4 +1,4 @@
-package base;
+package create;
 
 public class Singleton {
 

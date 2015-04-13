@@ -1,10 +1,10 @@
-package base.tests;
+package create.tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import base.AdapterPattern;
+import create.AdapterPattern;
 
 public class AdapterPatternTest {
 
