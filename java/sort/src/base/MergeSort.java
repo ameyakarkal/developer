@@ -2,17 +2,15 @@ package base;
 
 import java.util.Arrays;
 
-public class MergeSort implements ISort{
-
-	private final int[] _input;
+public class MergeSort extends Sort{
 	
 	public MergeSort(int[] input){
-		_input = input;
+		super(input);
 	}
 
 	@Override
 	public int[] sort() {
-		return sortRecursively(_input);
+		return sortRecursively(this.input);
 	}
 	
 	protected int[] sortRecursively(int[] input){
