@@ -5,6 +5,7 @@
 - algorithm to check for anagrams
 #### linked list
 ...
+
 #### tree
 - algorithm to check if two nodes are connected
 - algorithm to find least common ancestor
