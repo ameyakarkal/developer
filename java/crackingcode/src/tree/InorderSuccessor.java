@@ -12,11 +12,22 @@ public class InorderSuccessor {
 		// INORDER : left -> process current -> right
 		
 		/**
+		 * EXAMPLE 
+		 *   		 a
+		 *   	b			c
+		 *   d		e	f		g
+		 */
+		
+		/**
 		 * to find the in order successor
-		 * 1. if right is not null, return right node
-		 * 2. if parent is not null ->
-		 *      if current is the left child of the parent, then return parent
-		 * 3. if parent is null, find the left most child of right child.
+		 * 1. IF HAS RIGHT CHILD 
+		 * 		THEN LEFT MOST CHILD OF RIGHT CHILD (a -> f)
+		 * 2. ELSE 
+		 * 		IF IS LEFT MOST CHILD (PARENT IS NOT NULL AND PARENTS LEFT CHILD IS CURRENT) (d -> b)
+		 * 			RETURN PARENT
+		 * 		ELSE
+		 * 			MOVE TO PARENTS' PARENT TILL IT IS NOT NULL  2. (e -> a)
+		 * 	
 		 */
 	}
 }

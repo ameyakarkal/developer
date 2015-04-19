@@ -41,4 +41,8 @@ public class Tree {
 	public Tree getRight(){
 		return this.right;
 	}
+	
+	public int getData(){
+		return this.data;
+	}
 }
