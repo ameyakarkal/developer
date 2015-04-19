@@ -1,5 +1,6 @@
 package stack;
 
+
 public class StackWithMinimum {
 
 	public interface IStrategy {
@@ -14,6 +15,20 @@ public class StackWithMinimum {
 		 * here we save the minimum with each node,
 		 * thus the node contains the minimum value of the stack when this node was added.
 		 */
+		
+		private class Node {
+			private final int data;
+			private final int min;
+			private Node next;
+			Node(int data, int min){
+				this.data = data;
+				this.min = min;
+			}
+		}
+		
+		public void Add(int data, int min){
+			
+		}
 	}
 	
 	public class MinimumStack implements IStrategy{
