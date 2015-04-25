@@ -16,9 +16,5 @@ for i = 1 to n
 		}
 	}
 ```
-across the entire array, we swap one element. and continue till there are no swaps.
 
-	
-#### logic 
-- from zero to length of array, swap larger by smaller. 
-- If no swaps made in a loop then stop
+> across the entire array, we swap one element. and continue till there are no swaps.
