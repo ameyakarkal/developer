@@ -1,5 +1,5 @@
 package base;
 
 public interface ISort {
-	public int[] sort();
+	public int[] sort(int[] input);
 }
