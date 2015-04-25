@@ -1,6 +1,6 @@
 package arrays;
 
-public class Anagram {
+public class IsAnagram {
 
 	private interface IStrategy{
 		
