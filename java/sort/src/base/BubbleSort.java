@@ -3,6 +3,13 @@ package base;
 
 public class BubbleSort implements ISort{
 
+	private Meta meta;
+	public BubbleSort(){
+		this.meta = Meta.Builder.getInstance(
+				"BubbleSort",
+				Meta.BigO.Nsquared);
+	}
+	
 	@Override
 	public int[] sort(int[] input) {
 		boolean swapped = true;
