@@ -3,8 +3,10 @@ package domain.company;
 import java.util.HashMap;
 import java.util.Map;
 
-import tree.Tree;
-
+/**
+ * find least common manager between two employees in a company
+ *
+ */
 public class Company {
 	private static Company instance = new Company();
 	private static Employee root = null;
