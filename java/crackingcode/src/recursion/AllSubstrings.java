@@ -17,6 +17,7 @@ public class AllSubstrings {
 		List<String> permutations = getSubstring(reminder);
 		String permutation;
 		for(String word : permutations){
+			
 			for(int i = 0; i < reminder.length(); i++){
 			
 				permutation = insertCharacterAt(word, first, i);
