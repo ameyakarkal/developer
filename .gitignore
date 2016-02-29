@@ -2,3 +2,10 @@ java/.metadata/
 java/.recommenders/
 java/*/bin
 *.prefs
+**/packages/*
+**/node_modules/*
+**/bower_components/*
+**/obj/*
+**/bin/*
+**/.vs/*
+!**/packages/repositories.config

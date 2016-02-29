@@ -1,0 +1,22 @@
+{
+  "name": "Angular",
+  "description": "web project with angular, gulp tasks",
+  "main": "Global.ascx.cs",
+  "authors": [
+    "Ameya K"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ameyakarkal/developer",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.5.0",
+    "angular-ui-router": "~0.2.18"
+  }
+}
