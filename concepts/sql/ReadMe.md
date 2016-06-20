@@ -1,3 +1,3 @@
 SQL
 ----
-- [Optimization](Optimization.md)
+- [Optimization](optimization.md)
