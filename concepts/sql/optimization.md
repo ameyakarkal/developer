@@ -1,5 +1,33 @@
 ##Query Optimization
 
+>  gets NOT the BEST plan, but a GOOD plan FAST
+
+There are few factors taken into consideration for selecting a good plan
+- data selectivity , how many rows will be selected by the presented query.
+- estimates
+
+
+Estimates
+
+```
+DBCC SHOW_STATISTICS N'dbo.Person', N'IX_Person_Lastname'
+```
+shows three statistics for the table `dbo.Person` with respect to the index `IX_Person_Lastname`
+- header, when the statistics for the table was updated. how many rows the table contains and how many rows were sampled to collect the statistic
+- data density
+- histogram, helps the optimizer how much data might be present, can be used if data can be _sniffed_
+
+
+Statistics
+- statistics are used to generate the estimated values, which are then used to pick a good plan.
+- statistics are updated when usually 20% of the data is changed or manually triggered using a flag
+- histogram allows 200 steps.
+```
+
+```
+
+<hr/>
+
 ### How is the query submitted to the server ?
 
 #### ad hoc queries
