@@ -14,7 +14,7 @@ DBCC SHOW_STATISTICS N'dbo.Person', N'IX_Person_Lastname'
 ```
 shows three statistics for the table `dbo.Person` with respect to the index `IX_Person_Lastname`
 - header, when the statistics for the table was updated. how many rows the table contains and how many rows were sampled to collect the statistic
-- data density
+- data density vector
 - histogram, helps the optimizer how much data might be present, can be used if data can be _sniffed_
 
 
@@ -22,6 +22,13 @@ Statistics
 - statistics are used to generate the estimated values, which are then used to pick a good plan.
 - statistics are updated when usually 20% of the data is changed or manually triggered using a flag
 - histogram allows 200 steps.
+
+
+How the queries are presented affects how the statistics are used by the optimizer
+- if statistics are not present, optimizer uses Heuristics (mathematics based plan)
+- if optimizer cannot sniff the value, it cannot use the histogram (specific plan) and it falls back on density vector (general plan)
+- 
+
 ```
 
 ```
