@@ -2,6 +2,7 @@
 
 >  gets NOT the BEST plan, but a GOOD plan FAST
 
+
 There are few factors taken into consideration for selecting a good plan
 - data selectivity , how many rows will be selected by the presented query.
 - estimates
