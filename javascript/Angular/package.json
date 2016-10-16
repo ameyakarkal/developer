@@ -12,6 +12,11 @@
     "bower": "^1.7.7",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^1.8.0",
-    "gulp-concat": "^2.6.0"
+    "gulp-concat": "^2.6.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.4"
   }
 }
