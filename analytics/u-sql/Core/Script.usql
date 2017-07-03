@@ -1,0 +1,11 @@
+﻿@data =
+    EXTRACT Firstname string,
+            lastname string,
+            email string
+    FROM @"Data/data.csv"
+    USING Extractors.Csv();
+
+
+OUTPUT @data
+TO @"Data/output.csv"
+USING Outputters.Csv();
