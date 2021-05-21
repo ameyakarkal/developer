@@ -1,9 +1,8 @@
 # bash tips
 
-
-read multiline variables
-id=123
+read multiline variables with parameters
 ```bash
+id=123
 read -r -d '' msg <<EOF
 {
     "Timestamp": "1599146933217",
